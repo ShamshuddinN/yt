@@ -30,10 +30,14 @@ const changeSlug = (videoURL) => {
 }
 
 
+let windowWidth = window.innerWidth;
+let frameWidth = Math.floor(windowWidth * 0.6053)
 
-let frameWidth = Math.floor(window.innerWidth * 0.6053)
+if (windowWidth < 682) {
+    frameWidth = Math.floor(windowWidth * 0.95)
+}
+
 let frameHeight = Math.round(frameWidth * 0.5629)
-// console.log(`Height: ${frameHeight}, Width: ${frameWidth}`)
 
 window.onload = function () {
     document.getElementsByTagName('iframe')[0].height = frameHeight;
