@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/bootstrap.css">
+    <title>Text Dance</title>
+</head>
+<body class="bg-dark">
+    <div class="container-fluid mt-2">
+        <div class="row text-center">
+            <h3 class="text-light" >Youtube Ad-Free!</h3>
+        </div>
+    </div>
+
+    <div class="container-fluid p-4">
+        <div class="row justify-content-center">
+            <div class="col-lg-3 col-md-5 col-sm-6 col-10">
+                <!-- <div class="row">
+                    <input type="text" id="URLinput" onkeydown="HandleInput(event)" class="form-control rounded-start-pill p-2 border border-primary border-2" placeholder="Enter Yt video URL than Ctrl+Enter">
+                    <button class="btn btn-light">Go</button>    
+                </div> -->
+                <div class="input-group input-group-lg rounded-start-pill">                    
+                    <input type="text" id="URLinput" onkeydown="HandleInput(event)" class="form-control rounded-start-pill border border-secondary-subtle fs-6" placeholder="Enter video URL then Ctrl+Enter or>>" aria-describedby="inputGroup-sizing-lg">
+                    <!-- <span class="input-group-text" id="inputGroup-sizing-lg">Large</span>  -->
+                     <button onclick="getVideo()" class="btn btn-primary border border-primary border-4">Go</button>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 col-md-12 text-center">
+                <iframe src="https://www.youtube.com/embed/wUEl8KrMz14" title="Enjoy Your video for free!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <!-- width="929" height="523" -->
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="static/js/index.js"></script>
+</body>
+</html>
